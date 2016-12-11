@@ -3,7 +3,7 @@ set :domain,      "chapelle-quentin.fr"
 set :deploy_to,   "/var/www/chapelle-quentin.fr"
 set :app_path,    "app"
 
-set :repository,  "#{domain}:/var/repos/#{application}.git"
+set :repository,  "https://github.com/QuentinChapelle/mon_site.git"
 set :scm,         :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `subversion`, `mercurial`, `perforce`, or `none`
 
