@@ -1,0 +1,5 @@
+cv:
+    resource: "@CvBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

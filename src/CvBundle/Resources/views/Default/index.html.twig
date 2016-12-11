@@ -1,0 +1,186 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div data-midnight="white" id="top"></div>
+    <a class="back_to_top js-scrollTo" href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+    <nav class="menu_mobile">
+        <div class="menu-outer">
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="js-scrollTo" href="#slide2"><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp; Qui suis-je ?</a></li>
+                    <li><a class="js-scrollTo" href="#slide3"><i class="fa fa-language" aria-hidden="true"></i>&nbsp;Skills</a></li>
+                    <li><a class="js-scrollTo" href="#slide4"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Portfolio</a></li>
+                    <li><a class="js-scrollTo" href="#slide5"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a class="menu-close" onClick="return true">
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </a>
+    </nav>
+    <nav id="mon-element-fixed" class="nav" role="navigation">
+        <a class="js-scrollTo first_link" href="#slide1">QUENTIN-CHAPELLE.fr</a>
+        <ul class="nav_link">
+            <li><a class="js-scrollTo" href="#slide2"><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp; Qui suis-je ?</a></li>
+            <li><a class="js-scrollTo" href="#slide3"><i class="fa fa-language" aria-hidden="true"></i>&nbsp;Skills</a></li>
+            <li><a class="js-scrollTo" href="#slide4"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Portfolio</a></li>
+            <li><a class="js-scrollTo" href="#slide5"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;contact</a></li>
+        </ul>
+    </nav>
+    <div data-midnight="white" class=" slide" id="slide1">
+        <div class="slide_inside">
+            <h1 class="title">QUENTIN</br>DEVELOPPEUR</br>WEB JUNIOR</h1>
+            <div class="subtitle"> geek +&nbsp;smart +&nbsp;curious +&nbsp;nerd +&nbsp;ingenious +&nbsp;cunning &nbsp;=&nbsp;ME </div>
+        </div>
+    </div>
+    <div data-midnight="black" class="slide" id="slide2">
+        <div class="slide_inside texte">
+            <img src="{{ asset('assets/images/IMG_1035.jpg') }}">
+            <div class="txt">
+                <h2>Parlons de moi</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid architecto assumenda dicta eius fugiat molestias, necessitatibus nisi nulla omnis quae quas quisquam quo sed sit velit voluptas voluptate? Non?</p>
+            </div>
+        </div>
+    </div>
+    <div class="inter_slide"></div>
+    <div data-midnight="grey" class="slide" id="slide3">
+        <div class="slide_inside">
+            <div class="flex_skills">
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/html.svg') }}"></div>
+                        <div class="face back"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/html.svg') }}"></div>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"><img class="technos techno2 img-responsive" src="{{ asset('assets/icons/css.svg') }}"></div>
+                        <div class="face back"><img class="technos techno2 img-responsive" src="{{ asset('assets/icons/css.svg') }}"></div>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"> <img class="technos techno1 img-responsive" src="{{ asset('assets/icons/html.svg') }}"></div>
+                        <div class="face back"><img class="technos techno2 img-responsive" src="{{ asset('assets/icons/css.svg') }}"></div>
+                    </div>
+                </div>
+
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"><img class="technos techno4 img-responsive" src="{{ asset('assets/icons/js.svg') }}"></div>
+                        <div class="face back"><img class="technos techno4 img-responsive" src="{{ asset('assets/icons/js.svg') }}"></div>
+                    </div>
+                </div>
+
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"><img class="technos techno5 img-responsive" src="{{ asset('assets/icons/jquery.svg') }}"></div>
+                        <div class="face back"><img class="technos techno5 img-responsive" src="{{ asset('assets/icons/jquery.svg') }}"></div>
+                    </div>
+                </div>
+
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"><img class="technos techno6 img-responsive" src="{{ asset('assets/icons/github.svg') }}"></div>
+                        <div class="face back"><img class="technos techno6 img-responsive" src="{{ asset('assets/icons/github.svg') }}"></div>
+                    </div>
+                </div>
+
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"><img class="technos techno7 img-responsive" src="{{ asset('assets/icons/git.svg') }}"></div>
+                        <div class="face back"><img class="technos techno7 img-responsive" src="{{ asset('assets/icons/git.svg') }}"></div>
+                    </div>
+                </div>
+
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"><img class="technos techno8 img-responsive" src="{{ asset('assets/icons/inkscape.svg') }}"></div>
+                        <div class="face back"><img class="technos techno8 img-responsive" src="{{ asset('assets/icons/inkscape.svg') }}"></div>
+                    </div>
+                </div>
+
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"><img class="technos techno9 img-responsive" src="{{ asset('assets/icons/ubuntu.svg') }}"></div>
+                        <div class="face back"><img class="technos techno9 img-responsive" src="{{ asset('assets/icons/ubuntu.svg') }}"></div>
+                    </div>
+                </div>
+
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"><img class="technos techno10 img-responsive" src="{{ asset('assets/icons/symfony.svg') }}"></div>
+                        <div class="face back"><img class="technos techno10 img-responsive" src="{{ asset('assets/icons/symfony.svg') }}"></div>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="card">
+                        <div class="face front"><img class="technos techno11 img-responsive" src="{{ asset('assets/icons/html.svg') }}"></div>
+                        <div class="face back"><img class="technos techno11 img-responsive" src="{{ asset('assets/icons/html.svg') }}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inter_slide"></div>
+    <div class="slide" id="slide4">
+        <div class="slide_inside">
+        </div>
+    </div>
+    <div class="inter_slide"></div>
+    <div class="slide" id="slide5">
+        <div class="slide_inside">
+            {% for flash_message in app.session.flashBag.get('contact-notice') %}
+                <div class="contact-notice">
+                    {{ flash_message }}
+                </div>
+            {% endfor %}
+            <div class="container footer">
+                <div class="row">
+                    <div class="grid col-lg-offset-1 col-lg-5 col-lg-push-5  col-md-offset-1 col-md-5 col-md-push-5 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
+                        <h3>Retrouvez moi !</h3>
+                        <div class="réseaux">
+                            <a href="https://www.facebook.com/quentin.chapelle.90"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/Quentin_wcs"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            <a href="https://fr.linkedin.com/in/quentin-chapelle-244651100"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href="https://github.com/QuentinChapelle"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                        </div>
+                        <a class="cv" href="{{ asset('assets/images/eiffel-2.jpg') }}" download="Cv_Quentin_Chapelle.pdf"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;téléchargez mon cv !</a>
+                    </div>
+                    <div class="col-lg-4 col-lg-pull-5 col-md-4 col-md-pull-5 contact">
+                        <h3>Contactez moi !</h3>
+
+                        {{ form_start(form) }}
+
+                        {{form_label(form.name, 'Nom')}}
+                        {{form_widget(form.name, {'attr':{'class':'form-control'}}) }}
+                        {{form_errors(form.name)}}
+
+                        {{form_label(form.email, 'E-mail')}}
+                        {{form_widget(form.email, {'attr':{'class':'form-control'}}) }}
+                        {{form_errors(form.email)}}
+
+                        {{form_label(form.subject, 'Sujet')}}
+                        {{form_widget(form.subject, {'attr':{'class':'form-control'}}) }}
+                        {{form_errors(form.subject)}}
+
+                        {{form_label(form.message, 'Message')}}
+                        {{form_widget(form.message, {'attr':{'class':'form-control', 'placeholder':'merci de rentrer votre message ici.'}}) }}
+                        {{form_errors(form.message)}}
+                        {{ form_end(form) }}
+                        <button type="submit" class="btn btn-warning button_contact submit">Envoyer</button>
+                    </div>
+                </div>
+                <a href="{{ path ('mentions') }}"><i class="fa fa-gavel" aria-hidden="true"></i>
+                    Mentions légales</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

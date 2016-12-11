@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Quentin Chapelle{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('assets/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/css/base.css') }}">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/placeholder.png') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+            <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('assets/js/jquery-parallax.js') }}"></script>
+            <script src="{{ asset('assets/js/midnight.jquery.min.js') }}"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('#slide1').parallax("center", 2000, 0.5, true);
+                    $('#slide2').parallax("center", 2000, 0.8, true);
+                    $('#slide3').parallax("center", 2000, 0.5, true);
+                    $('#slide4').parallax("right", 3400, 0.5, true);
+                    $('#slide5').parallax("center", 400, 0.5, true);
+                })
+            </script>
+            <script>$(document).ready(function(){
+                    var mouseX, mouseY;
+                    var ww = $( window ).width();
+                    var wh = $( window ).height();
+                    var traX, traY;
+                    $(document).mousemove(function(e){
+                        mouseX = e.pageX;
+                        mouseY = e.pageY;
+                        traX = ((4 * mouseX) / 570) + 40;
+                        traY = ((4 * mouseY) / 570) + 50;
+                        console.log(traX);
+                        $(".title").css({"background-position": traX + "%" + traY + "%"});
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function() {
+                    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                        var page = $(this).attr('href'); // Page cible
+                        var speed = 750; // Durée de l'animation (en ms)
+                        $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                        return false;
+                    });
+                });
+            </script>
+            <script>
+                // Start midnight
+                $(document).ready(function(){
+                    // Change this to the correct selector.
+                    $('nav#mon-element-fixed').midnight();
+                });
+            </script>
+            <script>
+                $(".flip").hover(function(){
+                    $(this).find(".card").toggleClass("flipped");
+                    return false;
+                });
+            </script>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,570 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900,900i');
+
+
+
+
+/*===========================================NAVBAR=======================================================*/
+@media screen and (min-width: 800px){
+    .menu_mobile {
+        display: none;
+    }
+    .nav {
+        z-index: 10;
+    }
+
+    .js-scrollTo {
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 50px;
+        padding: 0 15px 0 15px;
+    }
+
+    .first_link {
+        font-size: 18px;
+    }
+    .nav_link {
+        display: inline-block;
+        list-style: none;
+        float: right;
+        margin: 0;
+    }
+
+    .nav_link li {
+        display: inline-block;
+    }
+
+    .midnightHeader.default {
+        background: white;
+    }
+    .midnightHeader.grey {
+        background: #333333;
+    }
+    .midnightHeader.grey a {
+        color: white;
+    }
+    .midnightHeader.black {
+        background: black;
+    }
+    .midnightHeader.black a {
+        color: wheat;
+    }
+
+    .midnightHeader.white {
+        background: white;
+    }
+    .midnightHeader.white a {
+        color: darkslateblue;
+    }
+
+}
+@media screen and (max-width: 800px){
+    #mon-element-fixed {
+        display: none;
+    }
+
+    .back_to_top {
+        font-size: 3em;
+        color: #333333;
+        margin-left: 10px;
+        z-index: 1000;
+        position: fixed;
+        top:0;
+        left: 0;
+    }
+
+    .back_to_top:active {
+        color: #333333;
+    }
+    .back_to_top:link {
+        color: #333333;
+    }
+    .back_to_top:focus {
+        color: #333333;
+    }
+    .back_to_top:visited {
+        color: #333333;
+    }
+
+    /* Stuff I added */
+    .menu-outer:hover ~ .menu-close {
+        margin-right:-100px;
+    }
+    .menu-outer:hover .bar { background:rgba(100,200,240,.9); }
+    .menu-outer > nav ul { top:15%; }
+
+    /* The rest I chnaged parts but not most of it */
+
+
+    .menu-outer {
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        font-family: 'Montserrat', serif;
+        z-index: 998;
+        width: 100%;
+        left: 100%;
+        margin-left: -100px;
+        height: 200%;
+        background: #333333;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+        -o-transition: all ease .5s;
+        transition: all ease .5s;
+        -webkit-transform-origin: top left;
+        -moz-transform-origin: top left;
+        -ms-transform-origin: top left;
+        -o-transform-origin: top left;
+        transform-origin: top left;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .menu-outer:hover {
+        background: #333333;
+        left: 0;
+        margin-left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    .js-scrollTo {
+        color: wheat;
+        font-family: 'Lato', sans-serif;
+    }
+    .menu-icon {
+        z-index: 999;
+        position: absolute;
+        top: 58px;
+        left: 10px;
+        width: 30px;
+        pointer-events: none;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+        -o-transition: all ease .5s;
+        transition: all ease .5s;
+    }
+    .menu-icon .bar {
+        background: wheat;
+        width: 100%;
+        height: 3px;
+        margin: 0 0 5px;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+        -o-transition: all ease .5s;
+        transition: all ease .5s;
+    }
+    .menu-outer:hover > .menu-icon {
+        opacity: 0;
+    }
+    nav ul {
+        position:absolute;
+        width:100%;
+        padding: 0;
+        left: 10%;; /*prevents possible click when not oppened*/
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+        -o-transition: all ease .5s;
+        transition: all ease .5s;
+    }
+    .menu-outer:hover > nav ul {
+        left: 0;
+    }
+    nav li {
+        list-style:none;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    nav li a {
+        font-size: 2em;
+        color: rgba(255,255,255,.8);
+        text-decoration: none;
+        margin: 0 auto;
+        padding: 20px;
+        display:block;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+        -o-transition: all ease .5s;
+        transition: all ease .5s;
+    }
+    nav li a:hover {
+        color: rgba(255,255,255,1);
+    }
+    @media screen and (max-width: 600px), screen and (max-height: 600px) {
+        nav ul {font-size:.75em;}
+        nav ul a {padding: 10px;}
+    }
+    .menu-close {
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        right: 100%;
+        width: 200px;
+        height: 200px;
+        background: rgba(250,130,70,1);
+        cursor: pointer;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+        -o-transition: all ease .5s;
+        transition: all ease .5s;
+        -webkit-transform-origin: top right;
+        -moz-transform-origin: top right;
+        -ms-transform-origin: top right;
+        -o-transform-origin: top right;
+        transform-origin: top right;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .menu-close .menu-icon {
+        right: 15px; left: auto;top: 68px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .menu-close .bar {
+        background: rgba(250,250,250,1);
+        width: 100%;
+        height: 5px;
+        position:absolute;
+        -webkit-transform-origin: center;
+        -moz-transform-origin: center;
+        -ms-transform-origin: center;
+        -o-transform-origin: center;
+        transform-origin: center;
+    }
+    .menu-close .bar:first-child {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .menu-close .bar:last-child {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+
+
+/*================================SLIDES=======================================================*/
+
+.slide {
+    min-height: 105vh;
+    display: flex;
+    background-size: contain;
+    width: 100%;
+}
+
+
+.slide_inside {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 80vw;
+    padding: 0;
+}
+
+.inter_slide {
+    background-color: black;
+    height: 5px;
+    text-align: center;
+}
+
+.container {
+    margin:0;
+    padding: 0;
+}
+
+#slide1 {position: relative; z-index: 5}
+#slide2 {position: relative; z-index: 3}
+#slide3 {position: relative; z-index: 2}
+#slide4 {position: relative; z-index: 4}
+#slide5 {position: relative; z-index: 1}
+.inter_slide {position: relative; z-index: 5}
+
+
+/*===========================================SLIDE HEAD=======================================================*/
+
+
+#slide1 {
+    background-color: white;
+}
+
+
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    color: transparent;
+    font-size: 12vmin;
+    background: url("../images/back_letter.jpg") repeat;
+    background-position: 40% 50%;
+    -webkit-background-clip: text;
+    position: relative;
+    text-align: center;
+    line-height: 10vh;
+    letter-spacing: -5px;
+    border: 3px solid transparent;
+    margin-top: -10vh;
+}
+
+.subtitle {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+
+/*===========================================SLIDE ME=======================================================*/
+#slide2 {
+    background: url(../images/back-s6.jpg);
+}
+
+#slide2 img {
+    width: 20vw;
+    min-width: 200px;
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
+    transform: perspective(1000px) rotateY(15deg);
+}
+
+.texte {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+}
+
+
+
+@media screen and (min-width: 950px){
+    #slide2 img {float: left}
+    .txt {
+        width: 50vw;
+        padding: 0 50px 0 50px;
+        float: right;
+    }
+}
+@media screen and (max-width: 950px){
+    #slide2 img {
+        margin-top: 50px;
+    }
+    .txt {padding: 25px 25px 0 25px;
+            margin-bottom: 50px}
+}
+
+/*===========================================SLIDE SKILLS=======================================================*/
+#slide3 {
+    background: rgba(46,46,45,1);
+    background: -moz-linear-gradient(-45deg, rgba(46,46,45,1) 0%, rgba(207,217,232,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(46,46,45,1) 0%, rgba(207,217,232,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(46,46,45,1) 0%, rgba(207,217,232,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(46,46,45,1) 0%, rgba(207,217,232,1) 100%);
+    background: linear-gradient(135deg, rgba(46,46,45,1) 0%, rgba(207,217,232,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2d', endColorstr='#cfd9e8', GradientType=1 );
+}
+
+.flex_skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.flip {
+    -ms-perspective: 800;
+    -o-perspective: 800;
+    width: 150px;
+    height: 150px;
+}
+.flip .card.flipped {
+    transform:rotatey(-180deg);
+    -ms-transform:rotatey(-180deg); /* IE 9 */
+    -moz-transform:rotatey(-180deg); /* Firefox */
+    -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+    -o-transform:rotatey(-180deg); /* Opera */
+}
+.flip .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: 0.5s;
+    -ms-transform-style: preserve-3d;
+    -ms-transition: 0.5s;
+    -o-transform-style: preserve-3d;
+    -o-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.flip .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    font-family: Georgia;
+    font-size: 3em;
+    text-align: center;
+    line-height: 200px;
+    backface-visibility: hidden;  /* W3C */
+    -webkit-backface-visibility: hidden; /* Safari & Chrome */
+    -moz-backface-visibility: hidden; /* Firefox */
+    -ms-backface-visibility: hidden; /* Internet Explorer */
+    -o-backface-visibility: hidden; /* Opera */
+
+}
+.flip .card .front {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+}
+.flip .card .back {
+    color: black;
+    cursor: pointer;
+
+    transform:rotatey(-180deg);
+    -ms-transform:rotatey(-180deg); /* IE 9 */
+    -moz-transform:rotatey(-180deg); /* Firefox */
+    -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+    -o-transform:rotatey(-180deg); /* Opera */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========================================SLIDE PORTFOLIO=======================================================*/
+#slide4 {
+    background: url(../images/back-s7.jpg);
+}
+/*===========================================SLIDE CONTACT=======================================================*/
+#slide5 {
+    background: url(../images/back-s8.jpg);
+    color: white;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+#slide5 .container .row div{
+    padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+.footer {
+    background-color: rgba(10,10,10,0.7) ;
+    min-height: 60vh;
+    width: 80vw;
+    border-radius: 15px;
+
+}
+
+.form-control {
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+label:first-child {
+    margin-top: 20px;
+}
+
+label {
+    color: wheat;
+    font-family: 'Lato', sans-serif;
+}
+
+textarea.form-control {
+    height: 100px;
+}
+
+.submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.réseaux{
+    display: flex;
+    width: 100%;
+    column-count: 2;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+}
+.réseaux a {
+    color: wheat;
+    font-size: 6em;
+    justify-content: center;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.réseaux a:hover {
+    color: goldenrod;
+    transform: rotate(10deg);
+    transition-duration: 0.5s;
+}
+
+
+@media  screen and (max-width: 992px){
+    .grid {
+        margin-right: 170px;
+    }
+}
+
+@media  screen and (max-width: 450px) {
+    .réseaux a {
+        font-size: 4.5em;
+    }
+}
+
+.cv {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 7px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
