@@ -3,7 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900,900i');
 
 
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+        margin-bottom: 50px;
+        margin-top: 100px;
 
+}
 
 /*===========================================NAVBAR=======================================================*/
 @media screen and (min-width: 800px){
@@ -39,8 +45,17 @@
     .midnightHeader.default {
         background: white;
     }
+    .midnightHeader.default a {
+        color: darkslateblue;
+    }
     .midnightHeader.grey {
-        background: #333333;
+        background: rgba(76,76,76,1);
+        background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 46%, rgba(43,43,43,1) 74%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+        background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 46%, rgba(43,43,43,1) 74%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+        background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 46%, rgba(43,43,43,1) 74%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+        background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 46%, rgba(43,43,43,1) 74%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+        background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 46%, rgba(43,43,43,1) 74%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
     }
     .midnightHeader.grey a {
         color: white;
@@ -55,6 +70,7 @@
     .midnightHeader.white {
         background: white;
     }
+
     .midnightHeader.white a {
         color: darkslateblue;
     }
@@ -288,6 +304,7 @@
     text-align: center;
     width: 80vw;
     padding: 0;
+    padding-bottom: 50px;
 }
 
 .inter_slide {
@@ -323,12 +340,11 @@
     font-weight: 900;
     color: transparent;
     font-size: 12vmin;
-    background: url("../images/back_letter.jpg") repeat;
+    background: url("../images/back-s1.jpg  ") repeat;
     background-position: 40% 50%;
     -webkit-background-clip: text;
     position: relative;
     text-align: center;
-    line-height: 10vh;
     letter-spacing: -5px;
     border: 3px solid transparent;
     margin-top: -10vh;
@@ -359,9 +375,12 @@
 .texte {
     background-color: rgba(255,255,255,0.8);
     border-radius: 10px;
+    padding-bottom: 0;
 }
 
-
+.txt h2 {
+    margin-top: 20px;
+}
 
 @media screen and (min-width: 950px){
     #slide2 img {float: left}
@@ -369,6 +388,9 @@
         width: 50vw;
         padding: 0 50px 0 50px;
         float: right;
+        margin-right: 5vw;
+        transform: translateY(-50%);
+        margin-top: 15%;
     }
 }
 @media screen and (max-width: 950px){
@@ -381,13 +403,11 @@
 
 /*===========================================SLIDE SKILLS=======================================================*/
 #slide3 {
-    background: rgba(46,46,45,1);
-    background: -moz-linear-gradient(-45deg, rgba(46,46,45,1) 0%, rgba(207,217,232,1) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(46,46,45,1) 0%, rgba(207,217,232,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(46,46,45,1) 0%, rgba(207,217,232,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(46,46,45,1) 0%, rgba(207,217,232,1) 100%);
-    background: linear-gradient(135deg, rgba(46,46,45,1) 0%, rgba(207,217,232,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2d', endColorstr='#cfd9e8', GradientType=1 );
+    background-color: #292929;
+}
+
+#slide3 h2 {
+    color: white;
 }
 
 .flex_skills {
@@ -441,21 +461,34 @@
 
 }
 .flip .card .front {
+    padding: 15px;
+    border: 1px solid #333333;
+    background-color: black;
     position: absolute;
     z-index: 1;
     color: white;
     cursor: pointer;
 }
 .flip .card .back {
+    border: 1px solid #333333;
     color: black;
     cursor: pointer;
-
+    background-color: antiquewhite;
     transform:rotatey(-180deg);
     -ms-transform:rotatey(-180deg); /* IE 9 */
     -moz-transform:rotatey(-180deg); /* Firefox */
     -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
     -o-transform:rotatey(-180deg); /* Opera */
 
+}
+
+.flip .card .back i{
+    font-size: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    margin: 50%;
 }
 
 
@@ -475,13 +508,221 @@
 /*===========================================SLIDE PORTFOLIO=======================================================*/
 #slide4 {
     background: url(../images/back-s7.jpg);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 }
+
+#slide4 h2 {
+    color: white;
+}
+
+.tuile {
+    margin: 5px;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.projets {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#slide4 h3 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 30px;
+}
+
+[class*=' imghvr-reveal-']:before, [class^=imghvr-reveal-]:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: inherit;
+}
+
+[class*=' imghvr-reveal-'] figcaption, [class^=imghvr-reveal-] figcaption {
+    opacity: 0;
+}
+
+[class*=' imghvr-reveal-']:hover:before, [class^=imghvr-reveal-]:hover:before {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+[class*=' imghvr-reveal-']:hover figcaption,
+[class^=imghvr-reveal-]:hover figcaption {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+    opacity: 1;
+}
+
+.imghvr-reveal-up:before {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+[class*=' imghvr-'], [class^=imghvr-] {
+    font-family: Montserrat, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    color: #666;
+    background-color: rgba(230, 230, 230, 0.7);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+[class*=' imghvr-'] img, [class^=imghvr-] img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+[class*=' imghvr-'] figcaption, [class^=imghvr-] figcaption {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+[class*=' imghvr-'] h4, [class*=' imghvr-'] p, [class^=imghvr-] h4,
+[class^=imghvr-] p {
+    margin: 0;
+    padding: 0;
+}
+
+[class*=' imghvr-'] h4, [class^=imghvr-] h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #333;
+}
+
+[class*=' imghvr-'] p, [class^=imghvr-] p {
+    font-family: Lora, sans-serif;
+    font-size: .9em;
+}
+
+[class*=' imghvr-'] a, [class^=imghvr-] a {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+[class*=' imghvr-'], [class*=' imghvr-'] *, [class*=' imghvr-'] :after,
+[class*=' imghvr-'] :before, [class*=' imghvr-']:after,
+[class*=' imghvr-']:before, [class^=imghvr-], [class^=imghvr-] *,
+[class^=imghvr-] :after, [class^=imghvr-] :before, [class^=imghvr-]:after,
+[class^=imghvr-]:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+}[class*=' imghvr-'], [class^=imghvr-] {
+     font-family: Montserrat, sans-serif;
+     position: relative;
+     display: inline-block;
+     overflow: hidden;
+     max-width: 100%;
+     margin: 10px;
+     -webkit-transform: translateZ(0);
+     transform: translateZ(0);
+     color: white;
+     background-color: rgba(10, 10, 10, 0.7);
+     -moz-osx-font-smoothing: grayscale;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+ }
+
+[class*=' imghvr-'] img, [class^=imghvr-] img {
+    max-width: 35vw;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 850px) {
+    [class*=' imghvr-'] img, [class^=imghvr-] img {
+        max-width: 60vw;
+    }
+}
+
+[class*=' imghvr-'] figcaption, [class^=imghvr-] figcaption {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+[class*=' imghvr-'] h4, [class*=' imghvr-'] p, [class^=imghvr-] h4,
+[class^=imghvr-] p {
+    margin: 0;
+    padding: 0;
+}
+
+[class*=' imghvr-'] h4, [class^=imghvr-] h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: white;
+}
+
+[class*=' imghvr-'] p, [class^=imghvr-] p {
+    font-family: Lora, sans-serif;
+    font-size: .9em;
+}
+
+[class*=' imghvr-'] a, [class^=imghvr-] a {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+[class*=' imghvr-'], [class*=' imghvr-'] *, [class*=' imghvr-'] :after,
+[class*=' imghvr-'] :before, [class*=' imghvr-']:after,
+[class*=' imghvr-']:before, [class^=imghvr-], [class^=imghvr-] *,
+[class^=imghvr-] :after, [class^=imghvr-] :before, [class^=imghvr-]:after,
+[class^=imghvr-]:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+}
+
+
+
+
 /*===========================================SLIDE CONTACT=======================================================*/
 #slide5 {
     background: url(../images/back-s8.jpg);
     color: white;
     padding-top: 50px;
     min-height: 100vh;
+}
+
+#slide5 .slide_inside {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 #slide5 .container .row div{
@@ -495,7 +736,7 @@
     background-color: rgba(10,10,10,0.7) ;
     min-height: 60vh;
     width: 80vw;
-    border-radius: 15px;
+    border-radius:15px 15px 0 0;
 
 }
 
@@ -519,7 +760,7 @@ textarea.form-control {
 
 .submit {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .réseaux{
@@ -528,7 +769,7 @@ textarea.form-control {
     column-count: 2;
     flex-wrap: wrap;
     margin-bottom: 50px;
-
+    margin-top: 30px;
 }
 .réseaux a {
     color: wheat;
@@ -561,10 +802,24 @@ textarea.form-control {
 .cv {
     margin-top: 100px;
     margin-bottom: 50px;
-    background-color: orange;
+    background-color: rgb(236, 151, 31);
     border-radius: 15px;
     padding: 7px;
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
+}
+
+.btn_cv {
+    margin-bottom: 50px;
+}
+
+.contact-notice {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgba(10,10,10,0.7) ;
+    border-radius: 15px;
+
 }

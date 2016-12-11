@@ -39,7 +39,7 @@ class DefaultController extends Controller
 
                 $this->addFlash('contact-notice', "Votre message à bien été envoyé, je reviens vers vous au plus vite !");
 
-                return $this->redirect($this->generateUrl('home', array('id' => $id)) . '#footer');
+                return $this->redirect($this->generateUrl('home', array('id' => $id)) . '#slide5');
             }
         }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,8 +35,8 @@
                     $(document).mousemove(function(e){
                         mouseX = e.pageX;
                         mouseY = e.pageY;
-                        traX = ((4 * mouseX) / 570) + 40;
-                        traY = ((4 * mouseY) / 570) + 50;
+                        traX = ((4 * mouseX) / 1300) + 40;
+                        traY = ((4 * mouseY) / 900) + 50;
                         console.log(traX);
                         $(".title").css({"background-position": traX + "%" + traY + "%"});
                     });
