@@ -303,7 +303,8 @@ h2 {
     display: flex;
     background-size: contain;
     width: 100%;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 
@@ -672,7 +673,7 @@ h2 {
         max-width: 80vw;
     }
     .imghvr-reveal-up {
-        transform: translateX(-5vw);
+        transform: translateX(-3vw);
     }
 }
 
