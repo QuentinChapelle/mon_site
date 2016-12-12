@@ -7,8 +7,6 @@ h2 {
     font-family: 'Lato', sans-serif;
     font-size: 35px;
         margin-bottom: 50px;
-        margin-top: 100px;
-
 }
 
 /*===========================================NAVBAR=======================================================*/
@@ -253,7 +251,7 @@ h2 {
     z-index: 100;
     list-style: none;
     height: 120vh;
-    background-color: #333333;
+    background-color: rgba(0,0,0,0.65);
     width: 100vw;
     margin: 0;padding: 0;border: 0;
     top: 0;
@@ -275,16 +273,6 @@ h2 {
     color: wheat;
 }
 
-#navbar_mobile .last_child {
-    padding: 25px 0 25px 0;
-    font-size: 8vmin;
-    width: 1.3em;
-    color: steelblue;
-    position: absolute;
-    left: 5vw;
-    bottom: 5px;
-    transform: translateX(-50%);
-}
 
 
 
@@ -441,8 +429,10 @@ h2 {
 .flip {
     -ms-perspective: 800;
     -o-perspective: 800;
-    width: 150px;
-    height: 150px;
+    width: 34vmin;
+    height: 34vmin;
+    max-width: 150px;
+    max-height: 150px;
 }
 .flip .card.flipped {
     transform:rotatey(-180deg);
@@ -676,9 +666,13 @@ h2 {
     vertical-align: top;
 }
 
+
 @media screen and (max-width: 850px) {
     [class*=' imghvr-'] img, [class^=imghvr-] img {
-        max-width: 60vw;
+        max-width: 80vw;
+    }
+    .imghvr-reveal-up {
+        transform: translateX(-5vw);
     }
 }
 
@@ -829,7 +823,7 @@ textarea.form-control {
     padding: 7px;
     color: white;
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 5vmin;
 }
 
 .btn_cv {
