@@ -2,29 +2,23 @@
 {% block body %}
     <div data-midnight="white" id="top"></div>
     <a class="back_to_top js-scrollTo" href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
-    <nav class="menu_mobile">
-        <div class="menu-outer">
-            <div class="menu-icon">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+    <section class="navbar">
+        <input type="checkbox" id="check_nav" data-target="#">
+        <label id="trans_nav" for="check_nav">
+            <div class="grip_nav container">
+                <div class="line_grip grip_1"></div>
+                <div class="line_grip grip_2"></div>
+                <div class="line_grip grip_3"></div>
             </div>
-            <nav>
-                <ul>
-                    <li><a class="js-scrollTo" href="#slide2"><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp; Qui suis-je ?</a></li>
-                    <li><a class="js-scrollTo" href="#slide3"><i class="fa fa-language" aria-hidden="true"></i>&nbsp;Skills</a></li>
-                    <li><a class="js-scrollTo" href="#slide4"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Portfolio</a></li>
-                    <li><a class="js-scrollTo" href="#slide5"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <a class="menu-close" onClick="return true">
-            <div class="menu-icon">
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </a>
-    </nav>
+            <ul id="navbar_mobile">
+                <li><a class="js-scrollTo" href="#slide2"><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp; Qui suis-je ?</a></li>
+                <li><a class="js-scrollTo" href="#slide3"><i class="fa fa-language" aria-hidden="true"></i>&nbsp;Skills</a></li>
+                <li><a class="js-scrollTo" href="#slide4"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Portfolio</a></li>
+                <li><a class="js-scrollTo" href="#slide5"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;contact</a></li>
+                <li><i class="fa fa-times last_child"></i></li>
+            </ul>
+        </label>
+    </section>
     <nav id="mon-element-fixed" class="nav" role="navigation">
         <a class="js-scrollTo first_link" href="#slide1">QUENTIN-CHAPELLE.fr</a>
         <ul class="nav_link">
@@ -42,7 +36,7 @@
     </div>
     <div data-midnight="black" class="slide" id="slide2">
         <div class="slide_inside texte">
-            <img src="{{ asset('assets/images/IMG_1035.jpg') }}" alt="photo quentin chapelle">
+            <img src="{{ asset('assets/images/IMG_1035.jpg') }}">
             <div class="txt">
                 <h2>Parlons de moi</h2>
                 <p>Quentin, développeur web junior de 24 ans. Mes études auprès de la Wild Code School d'Orléans m'ont permis de faire entrer ma carrière dans la dimension digitale et les nouvelles technologies. J'ai intégré un cursus formateur basé sur un apprentissage solide du Développement Web, mais aussi sur une immersion directe dans le milieu professionnel avec un contact client régulier. Consultez en ligne le portfolio de mes réalisations!</p>
@@ -56,85 +50,85 @@
             <div class="flex_skills">
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/html5-original.svg') }}" alt="html 5"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/html5-original.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-three-quarters" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/css3-original.svg') }}" alt="css 3"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/css3-original.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-three-quarters" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/php.svg') }}" alt="php"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/php.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-quarter" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/phpstorm.svg') }}"alt="php storm"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/phpstorm.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-half" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/symfony.svg') }}"alt="symfony"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/symfony.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-quarter" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/js.svg') }}" alt="javascript"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/js.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-quarter" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/jquery-original.svg') }}"alt="jquery"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/jquery-original.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-quarter" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/git.svg') }}" alt="git"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/git.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-half" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/github-original.svg') }}" alt="github"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/github-original.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-three-quarters" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/ubuntu.svg') }}"alt="ubuntu"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/ubuntu.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-half" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/inkscape-original.svg') }}" alt="inkscape"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/inkscape-original.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-half" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/bootstrap-plain.svg') }}" alt="bootstrap 3"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/bootstrap-plain.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-three-quarters" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/foundation-original.svg') }}" alt="foundation 6"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/foundation-original.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-quarter" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/raspberry.svg') }}" alt="raspberry pi"></div>
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/raspberry.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-half" aria-hidden="true"></i></div>
                     </div>
                 </div>
@@ -148,13 +142,13 @@
             <div class="projets">
                 <h3>Projets réalisé durant la formation</h3>
                 <div class="tuile">
-                    <figure class="imghvr-reveal-up"><img src="{{ asset('assets/images/wild_shoes.png') }}" alt="projet un wild code school">
+                    <figure class="imghvr-reveal-up"><img src="{{ asset('assets/images/wild_shoes.png') }}" alt="10">
                         <figcaption>
                             <h4>WildShoes</h4>
                             <p>&quot;Premier projet réalisé au sein de la Wild code School en utilisant uniquement les languages html et css.&quot;</p>
                         </figcaption><a href="javascript:;"></a>
                     </figure>
-                    <figure class="imghvr-reveal-up"><img src="{{ asset('assets/images/dissidance.png') }}" alt="projet deux wild code school">
+                    <figure class="imghvr-reveal-up"><img src="{{ asset('assets/images/dissidance.png') }}" alt="10">
                         <figcaption>
                             <h4>Dissidance</h4>
                             <p>&quot;Second projet réalisé dans le cadre de ma formation au seins de la Wild code school, introduction au language php et au framework symfony.</br> www.dissi.dance&quot;</p>
@@ -165,13 +159,13 @@
             <div class="line"></div>
             <div class="hackathon">
                 <h3>Hackathons</h3>
-                <figure class="imghvr-reveal-up"><img src="{{ asset('assets/images/weather-mood.png') }}" alt="hackathon un interne wild code school">
+                <figure class="imghvr-reveal-up"><img src="{{ asset('assets/images/weather-mood.png') }}" alt="10">
                     <figcaption>
                         <h4>WeatherMood</h4>
                         <p>&quot;Hackathon interne de 24h ayant pour objectif de proposer une playliste musicale en fonction de la météo de la ville recherché.&quot;</p>
                     </figcaption><a href="javascript:;"></a>
                 </figure>
-                <figure class="imghvr-reveal-up"><img src="{{ asset('assets/images/hektar.png') }}" alt="hackathon deux partenariat avec l'esa angers et sup de pub">
+                <figure class="imghvr-reveal-up"><img src="{{ asset('assets/images/hektar.png') }}" alt="10">
                     <figcaption>
                         <h4>Hektar</h4>
                         <p>&quot;Hagrickathon de 24h en collaboration avec les élèves de l'école Sup de Pub et l'ESA d'Angers, plateforme de mise en relations des acteurs de la filière agricole. Merci à Leslie, Adrien et Louis pour cette belle expérience.&quot;</p>
@@ -193,14 +187,14 @@
                     <div class="grid col-lg-offset-1 col-lg-5 col-lg-push-5  col-md-offset-1 col-md-5 col-md-push-5 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
                         <h3>Retrouvez moi !</h3>
                         <div class="réseaux">
-                            <a href="https://www.facebook.com/quentin.chapelle.90"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                            <a href="https://twitter.com/Quentin_wcs"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                            <a href="https://fr.linkedin.com/in/quentin-chapelle-244651100"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                            <a href="https://github.com/QuentinChapelle"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                            <a onClick="return true" href="https://www.facebook.com/quentin.chapelle.90"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a onClick="return true" href="https://twitter.com/Quentin_wcs"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            <a onClick="return true" href="https://fr.linkedin.com/in/quentin-chapelle-244651100"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a onClick="return true" href="https://github.com/QuentinChapelle"><i class="fa fa-github-square" aria-hidden="true"></i></a>
                         </div>
                         <div class="btn_cv"><a class="cv" href="{{ asset('assets/images/eiffel-2.jpg') }}" download="Cv_Quentin_Chapelle.pdf"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;téléchargez mon cv !</a></div>
                     </div>
-                    <div class="col-lg-4 col-lg-pull-5 col-md-4 col-md-pull-5 contact">
+                    <div class="col-lg-4 col-lg-pull-5 col-md-4 col-md-pull-5 col-sm-12 col-xs-12 contact">
                         <h3>Contactez moi !</h3>
 
                         {{ form_start(form) }}

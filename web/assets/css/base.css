@@ -13,7 +13,7 @@ h2 {
 
 /*===========================================NAVBAR=======================================================*/
 @media screen and (min-width: 800px){
-    .menu_mobile {
+    .navbar {
         display: none;
     }
     .nav {
@@ -84,13 +84,13 @@ h2 {
     .back_to_top {
         font-size: 3em;
         color: #333333;
-        margin-left: 10px;
-        z-index: 1000;
+        margin-right: 10px;
+        z-index: 50;
         position: fixed;
-        top:0;
-        left: 0;
+        bottom:0;
+        right: 0;
     }
-
+}
     .back_to_top:active {
         color: #333333;
     }
@@ -104,187 +104,207 @@ h2 {
         color: #333333;
     }
 
-    /* Stuff I added */
-    .menu-outer:hover ~ .menu-close {
-        margin-right:-100px;
-    }
-    .menu-outer:hover .bar { background:rgba(100,200,240,.9); }
-    .menu-outer > nav ul { top:15%; }
 
-    /* The rest I chnaged parts but not most of it */
+/*============================MOBILE==============================*/
 
 
-    .menu-outer {
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        font-family: 'Montserrat', serif;
-        z-index: 998;
-        width: 100%;
-        left: 100%;
-        margin-left: -100px;
-        height: 200%;
-        background: #333333;
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        -ms-transition: all ease .5s;
-        -o-transition: all ease .5s;
-        transition: all ease .5s;
-        -webkit-transform-origin: top left;
-        -moz-transform-origin: top left;
-        -ms-transform-origin: top left;
-        -o-transform-origin: top left;
-        transform-origin: top left;
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-    }
-    .menu-outer:hover {
-        background: #333333;
-        left: 0;
-        margin-left: 0;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    .js-scrollTo {
-        color: wheat;
-        font-family: 'Lato', sans-serif;
-    }
-    .menu-icon {
-        z-index: 999;
-        position: absolute;
-        top: 58px;
-        left: 10px;
-        width: 30px;
-        pointer-events: none;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        -ms-transition: all ease .5s;
-        -o-transition: all ease .5s;
-        transition: all ease .5s;
-    }
-    .menu-icon .bar {
-        background: wheat;
-        width: 100%;
-        height: 3px;
-        margin: 0 0 5px;
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        -ms-transition: all ease .5s;
-        -o-transition: all ease .5s;
-        transition: all ease .5s;
-    }
-    .menu-outer:hover > .menu-icon {
-        opacity: 0;
-    }
-    nav ul {
-        position:absolute;
-        width:100%;
-        padding: 0;
-        left: 10%;; /*prevents possible click when not oppened*/
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        -ms-transition: all ease .5s;
-        -o-transition: all ease .5s;
-        transition: all ease .5s;
-    }
-    .menu-outer:hover > nav ul {
-        left: 0;
-    }
-    nav li {
-        list-style:none;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    nav li a {
-        font-size: 2em;
-        color: rgba(255,255,255,.8);
-        text-decoration: none;
-        margin: 0 auto;
-        padding: 20px;
-        display:block;
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        -ms-transition: all ease .5s;
-        -o-transition: all ease .5s;
-        transition: all ease .5s;
-    }
-    nav li a:hover {
-        color: rgba(255,255,255,1);
-    }
-    @media screen and (max-width: 600px), screen and (max-height: 600px) {
-        nav ul {font-size:.75em;}
-        nav ul a {padding: 10px;}
-    }
-    .menu-close {
-        z-index: 9999;
-        position: fixed;
-        top: 0;
-        right: 100%;
-        width: 200px;
-        height: 200px;
-        background: rgba(250,130,70,1);
-        cursor: pointer;
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        -ms-transition: all ease .5s;
-        -o-transition: all ease .5s;
-        transition: all ease .5s;
-        -webkit-transform-origin: top right;
-        -moz-transform-origin: top right;
-        -ms-transform-origin: top right;
-        -o-transform-origin: top right;
-        transform-origin: top right;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-    .menu-close .menu-icon {
-        right: 15px; left: auto;top: 68px;
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-    }
-    .menu-close .bar {
-        background: rgba(250,250,250,1);
-        width: 100%;
-        height: 5px;
-        position:absolute;
-        -webkit-transform-origin: center;
-        -moz-transform-origin: center;
-        -ms-transform-origin: center;
-        -o-transform-origin: center;
-        transform-origin: center;
-    }
-    .menu-close .bar:first-child {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-    .menu-close .bar:last-child {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-    }
+#check_nav:checked .back_to_top {
+    display: none;
 }
+
+.js-scrollTo {
+    color: wheat;
+}
+
+.navbar {
+    margin-top: -10px;
+    position: fixed;
+    z-index: 10;
+    border: 0;
+}
+
+#check_nav {
+    display: none;
+}
+
+.grip_nav {
+    padding: 0;
+    z-index: 120;
+    height:30px;
+    width: 30px;
+    position: absolute;
+    left:20px;
+    top: 20px;
+}
+
+.line_grip {
+    margin: 30px 0 0 0px;
+    height: 40px;
+    width: 2px;
+    background-color: wheat;
+}
+
+.grip_2 {
+    margin-left: 8px;
+    margin-top: -40px;
+}
+
+.grip_3 {
+    margin-left: 16px;
+    margin-top: -40px;
+}
+#trans_nav {
+    top:0;
+    position: fixed;
+}
+
+#check_nav:not(:checked) + #trans_nav{
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    left: calc(100vw - 100px);
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+
+#check_nav:checked + #trans_nav{
+    transform-origin: 0 0;
+    transform: rotate(0deg);
+    left: 0;
+    transition-duration: 1s;
+}
+#check_nav:checked + #trans_nav .grip_nav {
+    position: fixed;
+
+}
+
+
+#check_nav:checked + #trans_nav .grip_nav {
+    animation: translate 1.5s ease 1 forwards;
+
+}
+
+#check_nav:not(checked) + #trans_nav .grip_nav {
+    animation: translate-reverse 1.5s ease 1 forwards;
+
+}
+#check_nav:checked + #trans_nav .grip_1{
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+    transition-delay: 1s;
+    width: 5px;
+
+}
+#check_nav:checked + #trans_nav .grip_2{
+    position: absolute;
+    margin:-40px 0 0 0;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+    transition-delay: 1s;
+    width: 5px;
+}
+#check_nav:checked + #trans_nav .grip_3{
+    position: absolute;
+    margin:-40px 0 0 0;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+    transition-delay: 1s;
+    width: 5px;
+
+}
+
+#check_nav:not(checked) + #trans_nav .grip_1{
+    transform: rotate(0deg);
+    transition-duration: .5s;
+}
+#check_nav:not(checked) + #trans_nav .grip_2{
+    transform: rotate(0deg);
+    transition-duration: .5s;
+}
+#check_nav:not(checked) + #trans_nav .grip_3{
+    transform: rotate(0deg);
+    transition-duration: .5s;
+
+}
+
+
+@keyframes translate {
+    0%{transform: translateY(10px)}
+
+    66%{transform: translateY(-30px)}
+
+    100%{transform: translate(calc(100vw - 70px), -30px)}
+}
+
+@keyframes translate-reverse {
+    0%{transform: translate(calc(100vw - 70px), -30px)}
+
+    33%{transform: translate(0px, -30px)}
+
+    100%{}
+}
+
+
+
+
+
+
+#navbar_mobile {
+    position: fixed;
+    z-index: 100;
+    list-style: none;
+    height: 120vh;
+    background-color: #333333;
+    width: 100vw;
+    margin: 0;padding: 0;border: 0;
+    top: 0;
+    text-align: center;
+}
+
+#navbar_mobile li:first-child{
+    margin-top: 30vh;
+}
+
+#navbar_mobile li{
+    line-height: 50px;
+}
+
+#navbar_mobile a {
+    padding: 25px 0 25px 0;
+    font-size: 7vmin;
+    width: 1.3em;
+    color: wheat;
+}
+
+#navbar_mobile .last_child {
+    padding: 25px 0 25px 0;
+    font-size: 8vmin;
+    width: 1.3em;
+    color: steelblue;
+    position: absolute;
+    left: 5vw;
+    bottom: 5px;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -295,6 +315,7 @@ h2 {
     display: flex;
     background-size: contain;
     width: 100%;
+    padding: 50px;
 }
 
 
@@ -764,6 +785,7 @@ textarea.form-control {
 }
 
 .réseaux{
+    z-index: 15;
     display: flex;
     width: 100%;
     column-count: 2;
