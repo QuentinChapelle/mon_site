@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     <div data-midnight="white" id="top"></div>
-    <a class="back_to_top js-scrollTo" href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+    <a id="back-to-top" class="back_to_top js-scrollTo" href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
     <section class="navbar">
         <input type="checkbox" id="check_nav" data-target="#">
         <label id="trans_nav" for="check_nav">
@@ -38,7 +38,10 @@
             <img src="{{ asset('assets/images/IMG_1035.jpg') }}">
             <div class="txt">
                 <h2>Qui suis-je ?</h2>
-                <p>Quentin, développeur web junior de 24 ans. Mes études auprès de la Wild Code School d'Orléans m'ont permis de faire entrer ma carrière dans la dimension digitale et les nouvelles technologies. J'ai intégré un cursus formateur basé sur un apprentissage solide du Développement Web, mais aussi sur une immersion directe dans le milieu professionnel avec un contact client régulier. Consultez en ligne le portfolio de mes réalisations!</p>
+                <p>Quentin, développeur web junior de 24 ans. Mes études auprès de la Wild Code School d'Orléans m'ont permis de faire entrer ma carrière dans la dimension digitale et les nouvelles technologies.</br>
+                    J'ai intégré un cursus formateur basé sur un apprentissage solide du Développement Web, en particulier PHP et le framework Symfony, mais adapté et utilisable à tout les languages.
+                    C'est aussi sur une immersion directe dans le milieu professionnel avec un contact client régulier.
+                    </br></br>Consultez en ligne le portfolio de mes réalisations!</p>
             </div>
         </div>
     </div>
@@ -79,6 +82,12 @@
                 </div>
                 <div class="flip">
                     <div class="card">
+                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/mysql-original.svg') }}"></div>
+                        <div class="face back"><i class="fa fa-battery-quarter" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="card">
                         <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/js.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-quarter" aria-hidden="true"></i></div>
                     </div>
@@ -99,12 +108,6 @@
                     <div class="card">
                         <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/github-original.svg') }}"></div>
                         <div class="face back"><i class="fa fa-battery-three-quarters" aria-hidden="true"></i></div>
-                    </div>
-                </div>
-                <div class="flip">
-                    <div class="card">
-                        <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/ubuntu.svg') }}"></div>
-                        <div class="face back"><i class="fa fa-battery-half" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">

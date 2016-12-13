@@ -81,9 +81,9 @@ h2 {
 
     .back_to_top {
         font-size: 3em;
-        color: #333333;
+        color: wheat;
         margin-right: 10px;
-        z-index: 50;
+        z-index: 20;
         position: fixed;
         bottom:0;
         right: 0;
@@ -93,13 +93,13 @@ h2 {
         color: #333333;
     }
     .back_to_top:link {
-        color: #333333;
+        color: wheat;
     }
     .back_to_top:focus {
-        color: #333333;
+        color: wheat;
     }
     .back_to_top:visited {
-        color: #333333;
+        color: wheat;
     }
 
 
@@ -375,7 +375,7 @@ h2 {
 
 #slide2 img {
     width: 20vw;
-    min-width: 200px;
+    min-width: 250px;
     -webkit-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
@@ -383,13 +383,18 @@ h2 {
 }
 
 .texte {
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 10px;
+    padding-top: 10vh;
     padding-bottom: 0;
 }
 
-.txt h2 {
-    margin-top: 20px;
+.txt {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+
+}
+
+.txt p {
+    padding-bottom: 20px;
 }
 
 @media screen and (min-width: 950px){
@@ -400,7 +405,7 @@ h2 {
         float: right;
         margin-right: 5vw;
         transform: translateY(-50%);
-        margin-top: 15%;
+        margin-top: 18.5%;
     }
 }
 @media screen and (max-width: 950px){
@@ -424,6 +429,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
 }
 
 
@@ -530,6 +536,8 @@ h2 {
 .tuile {
     margin: 5px;
 }
+
+
 
 .line {
     height: 2px;
@@ -734,6 +742,7 @@ h2 {
     color: white;
     padding-top: 50px;
     min-height: 100vh;
+    padding-bottom: 0;
 }
 
 #slide5 .slide_inside {
