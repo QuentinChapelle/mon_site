@@ -27,6 +27,10 @@
             <li><a class="js-scrollTo" href="#slide5"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;contact</a></li>
         </ul>
     </nav>
+
+
+
+
     <div data-midnight="white" class=" slide" id="slide1">
         <div class="slide_inside">
             <h1 class="title">QUENTIN</br>DEVELOPPEUR</br>WEB JUNIOR</h1>
@@ -39,8 +43,8 @@
             <div class="txt">
                 <h2>Qui suis-je ?</h2>
                 <p>Quentin, développeur web junior de 24 ans. Mes études auprès de la Wild Code School d'Orléans m'ont permis de faire entrer ma carrière dans la dimension digitale et les nouvelles technologies.</br>
-                    J'ai intégré un cursus formateur basé sur un apprentissage solide du Développement Web, en particulier PHP et le framework Symfony, mais adapté et utilisable à tout les languages.
-                    C'est aussi sur une immersion directe dans le milieu professionnel avec un contact client régulier.
+                    J'ai intégré un cursus formateur basé sur un apprentissage solide du développement Web, en particulier PHP et le framework Symfony, mais adapté et utilisable à tous les langages.
+                    Il s'agit également d'une immersion dans le milieu professionnel avec un contact client régulier.
                     </br></br>Consultez en ligne le portfolio de mes réalisations!</p>
             </div>
         </div>
@@ -65,7 +69,7 @@
                 <div class="flip">
                     <div class="card">
                         <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/php.svg') }}"></div>
-                        <div class="face back"><i class="fa fa-battery-quarter" aria-hidden="true"></i></div>
+                        <div class="face back"><i class="fa fa-battery-half" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
@@ -77,13 +81,13 @@
                 <div class="flip">
                     <div class="card">
                         <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/symfony.svg') }}"></div>
-                        <div class="face back"><i class="fa fa-battery-quarter" aria-hidden="true"></i></div>
+                        <div class="face back"><i class="fa fa-battery-half" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
                     <div class="card">
                         <div class="face front"><img class="technos techno1 img-responsive" src="{{ asset('assets/icons/mysql-original.svg') }}"></div>
-                        <div class="face back"><i class="fa fa-battery-quarter" aria-hidden="true"></i></div>
+                        <div class="face back"><i class="fa fa-battery-half" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="flip">
@@ -148,13 +152,13 @@
                         <figcaption>
                             <h4>WildShoes</h4>
                             <p>&quot;Premier projet réalisé au sein de la Wild code School en utilisant uniquement les languages html et css.&quot;</p>
-                        </figcaption><a href="javascript:;"></a>
+                        </figcaption>
                     </figure>
                     <figure class="imghvr-reveal-up"><img src="{{ asset('assets/images/dissidance.png') }}" alt="10">
                         <figcaption>
                             <h4>Dissidance</h4>
-                            <p>&quot;Projet réalisé dans le cadre de ma formation au seins de la Wild code school, introduction au language php et a symfony.&quot;</p>
-                        </figcaption><a href="javascript:;"></a>
+                            <p>&quot;Projet réalisés dans le cadre de ma formation au seins de la Wild code school, introduction au language php et a symfony.&quot;</p>
+                        </figcaption><a target="blank" href="http://www.dissi.dance"></a>
                     </figure>
                 </div>
             </div>
@@ -165,13 +169,13 @@
                     <figcaption>
                         <h4>WeatherMood</h4>
                         <p>&quot;Hackathon interne de 24h ayant pour objectif de proposer une playliste musicale en fonction de la météo de la ville recherché.&quot;</p>
-                    </figcaption><a href="javascript:;"></a>
+                    </figcaption>
                 </figure>
                 <figure class="imghvr-reveal-up"><img src="{{ asset('assets/images/hektar.png') }}" alt="10">
                     <figcaption>
                         <h4>Hektar</h4>
                         <p>&quot;Hagrickathon en collaboration avec les élèves de l'école Sup de Pub et l'ESA d'Angers. Merci à Leslie, Adrien et Louis pour cette belle expérience.&quot;</p>
-                    </figcaption><a href="javascript:;"></a>
+                    </figcaption>
                 </figure>
             </div>
         </div>
@@ -194,7 +198,7 @@
                             <a onClick="return true" href="https://fr.linkedin.com/in/quentin-chapelle-244651100"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                             <a onClick="return true" href="https://github.com/QuentinChapelle"><i class="fa fa-github-square" aria-hidden="true"></i></a>
                         </div>
-                        <div class="btn_cv"><a class="cv" href="{{ asset('assets/images/eiffel-2.jpg') }}" download="Cv_Quentin_Chapelle.pdf"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;téléchargez mon cv !</a></div>
+                        <div class="btn_cv"><a class="cv" href="{{ asset('assets/images/CV_QC_WEB.pdf') }}" download="Cv_Quentin_Chapelle.pdf"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Téléchargez mon cv !</a></div>
                     </div>
                     <div class="col-lg-4 col-lg-pull-5 col-md-4 col-md-pull-5 col-sm-12 col-xs-12 contact">
                         <h3>Contactez moi !</h3>
@@ -226,4 +230,26 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Je recherche un stage</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="{{ asset('assets/icons/logo_wild.svg') }}" alt="logo wild code school">
+                    <p>Bonjour,</br></br>Dans la continuité de ma formation au sein de la Wild Code School d'Orléans, je suis actuellement à la recherche d'un stage de développeur web. J'ai principalement étudié PHP et le framework Symfony durant mon parcours, mais j'étudie d'autres langages en parallèle.</br>
+                        </br>N'hésitez pas à me contacter via <a href="#slide5"> le formulaire</a> en bas de page. Merci et bonne visite!</p>
+                    <button type="button" class="btn btn-default close_modal" data-dismiss="modal">X Fermer</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script>
+        $(document).ready(function(){
+            $('#myModal').modal('show');
+        });
+    </script>
 {% endblock %}
